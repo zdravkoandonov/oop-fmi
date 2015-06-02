@@ -18,6 +18,7 @@ public:
 	void start()
 	{
 		std::cout << "MPEG\n";
+		format = MPEG;
 		Song::start();
 	}
 };

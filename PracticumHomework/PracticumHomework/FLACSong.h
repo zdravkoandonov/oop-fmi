@@ -18,6 +18,7 @@ public:
 	void start()
 	{
 		std::cout << "FLAC\n";
+		format = FLAC;
 		Song::start();
 	}
 };

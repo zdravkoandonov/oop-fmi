@@ -1,7 +1,16 @@
 #pragma once
 #include "Song.h"
+#include <vector>
+#include <ctime>
+
+using std::vector;
+
 class Playlist
 {
+	vector<Song*> songs;
+	int currentSong;
+	time_t timeCurSongStarted;
+	int secondsLeftFromStart;
 public:
 	Playlist();
 	~Playlist();

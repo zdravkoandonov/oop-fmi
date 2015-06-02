@@ -1,6 +1,5 @@
 #include "Song.h"
 
-
 Song::Song(char *title)
 {
 }
@@ -41,6 +40,11 @@ int Song::times_played()
 bool Song::isPlaying()
 {
 	return playing;
+}
+
+bool Song::isStarted()
+{
+	return started;
 }
 
 char* Song::getTitle()

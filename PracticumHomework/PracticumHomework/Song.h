@@ -1,14 +1,20 @@
 #pragma once
 class Song
 {
+private:
 	char *title;
 	char *singer;
 	char *album;
 	char *genre;
 	int length;
-	int format;
+	bool started;
 	bool playing;
 	int timesPlayed;
+
+protected:
+	static const enum formatType { MPEG, FLAC };
+	formatType format;
+
 public:
 	Song(char *title);
 	~Song();
@@ -20,6 +26,7 @@ public:
 	virtual void toggle_play();
 	int times_played();
 	bool isPlaying();
+	bool isStarted();
 	char* getTitle();
 	char* getSinger();
 	char* getAlbum();
