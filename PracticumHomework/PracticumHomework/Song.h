@@ -19,6 +19,11 @@ public:
 	Song(char *title);
 	~Song();
 
+private:
+	// disable copying	
+	Song(const Song&);
+
+public:
 	virtual void start() = 0;
 	virtual void stop();
 	virtual void play();

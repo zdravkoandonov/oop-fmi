@@ -7,14 +7,20 @@ using std::vector;
 
 class Playlist
 {
+private:
 	vector<Song*> songs;
 	int currentSong;
 	time_t timeCurSongStarted;
 	int secondsLeftFromStart;
+
 public:
 	Playlist();
 	~Playlist();
 
+private:
+	Playlist(const Playlist&);
+
+public:
 	void play();
 	void pause();
 	void next();

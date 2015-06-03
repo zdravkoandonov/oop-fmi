@@ -3,6 +3,7 @@
 
 Playlist::Playlist()
 {
+	songs = vector<Song*>();
 	currentSong = 0;
 }
 
