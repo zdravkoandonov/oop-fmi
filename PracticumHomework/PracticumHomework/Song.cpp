@@ -1,9 +1,9 @@
 #include "Song.h"
 
-Song::Song(char *title)
+Song::Song(char *title, char *singer, char *album, char *genre, int length)
+	: title(title), singer(singer), album(album), genre(genre), length(length)
 {
 }
-
 
 Song::~Song()
 {

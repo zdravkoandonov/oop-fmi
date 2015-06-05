@@ -12,12 +12,12 @@ private:
 	int timesPlayed;
 
 protected:
-	static const enum formatType { MPEG, FLAC };
+	enum formatType { MPEG, FLAC };
 	formatType format;
 
 public:
-	Song(char *title);
-	~Song();
+	Song(char *title, char *singer, char *album, char *genre, int length);
+	virtual ~Song();
 
 private:
 	// disable copying	

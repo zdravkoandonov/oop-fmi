@@ -6,7 +6,7 @@ class FLACSong :
 {
 public:
 
-	FLACSong(char *title) : Song(title)
+	FLACSong(char *title, char *singer, char *album, char *genre, int length) : Song(title, singer, album, genre, length)
 	{
 	}
 

@@ -6,7 +6,7 @@ class MPEGSong :
 {
 public:
 
-	MPEGSong(char *title) : Song(title)
+	MPEGSong(char *title, char *singer, char *album, char *genre, int length) : Song(title, singer, album, genre, length)
 	{
 	}
 

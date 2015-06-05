@@ -16,7 +16,7 @@ void Playlist::play()
 {
 	if (songs[currentSong]->isStarted())
 	{
-		if ((!songs[currentSong]->isPlaying))
+		if (!(songs[currentSong]->isPlaying()))
 		{
 			timeCurSongStarted = time(NULL);
 			songs[currentSong]->play();
@@ -44,12 +44,14 @@ void Playlist::next()
 	if (songs[currentSong]->isPlaying())
 	{
 		songs[currentSong]->stop();
+		//start from the first one if you were on the last
 		songs[(++currentSong) %= songs.size()]->start();
 		timeCurSongStarted = time(NULL);
 		secondsLeftFromStart = songs[currentSong]->getLength();
 	}
 	else
 	{
+		//start from the first one if you were on the last
 		(++currentSong) %= songs.size();;
 	}
 }
@@ -61,12 +63,14 @@ void Playlist::previous()
 	if (songs[currentSong]->isPlaying())
 	{
 		songs[currentSong]->stop();
+		// start from the last one if you were on the first
 		songs[(--currentSong += songs.size()) %= songs.size()]->start();
 		timeCurSongStarted = time(NULL);
 		secondsLeftFromStart = songs[currentSong]->getLength();
 	}
 	else
 	{
+		// start from the last one if you were on the first
 		(--currentSong += songs.size()) %= songs.size();
 	}
 }
@@ -119,5 +123,5 @@ void Playlist::shuffle()
 
 int Playlist::left()
 {
-	return (songs[currentSong]->isPlaying) ? secondsLeftFromStart - (time(NULL) - timeCurSongStarted) : secondsLeftFromStart;
+	return (songs[currentSong]->isPlaying()) ? secondsLeftFromStart - (time(NULL) - timeCurSongStarted) : secondsLeftFromStart;
 }
