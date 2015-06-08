@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LecturesHomework", "LecturesHomework\LecturesHomework.vcxproj", "{E1E17A56-1F50-45CD-849F-BB3800AC4865}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Formulas", "Formulas\Formulas.vcxproj", "{B860EBDF-6B69-4D9A-9981-23C10EA6237A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1E17A56-1F50-45CD-849F-BB3800AC4865}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1E17A56-1F50-45CD-849F-BB3800AC4865}.Debug|Win32.Build.0 = Debug|Win32
+		{E1E17A56-1F50-45CD-849F-BB3800AC4865}.Release|Win32.ActiveCfg = Release|Win32
+		{E1E17A56-1F50-45CD-849F-BB3800AC4865}.Release|Win32.Build.0 = Release|Win32
+		{B860EBDF-6B69-4D9A-9981-23C10EA6237A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B860EBDF-6B69-4D9A-9981-23C10EA6237A}.Debug|Win32.Build.0 = Debug|Win32
+		{B860EBDF-6B69-4D9A-9981-23C10EA6237A}.Release|Win32.ActiveCfg = Release|Win32
+		{B860EBDF-6B69-4D9A-9981-23C10EA6237A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
